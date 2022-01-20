@@ -1,8 +1,11 @@
-
+'''code for Title of post
+Link if any in post
+No. of upvotes
+No. of comments
+No. of downvotes'''
 
 import praw
-import pandas as pd
- 
+import json
 reddit_read_only = praw.Reddit(client_id="5VXQY9rsg0krP6vuaff5Zg",         #  client id
                                client_secret="V7AXW5yPBsMLwsLO21SBkSZ3fxNaIA",      # client secret
                                user_agent="Sakchi0405")   #user id
@@ -43,6 +46,6 @@ for post in posts:
 	posts_dict["Post URL"].append(post.url)
   
  
-import json
+
 with open('post_dict.json', 'w', encoding='utf-8') as f:
     json.dump(posts_dict, f, ensure_ascii=False, indent=4)
