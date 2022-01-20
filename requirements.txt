@@ -1,0 +1,3 @@
+Praw Library installed
+Reddit account
+Python 3.6
